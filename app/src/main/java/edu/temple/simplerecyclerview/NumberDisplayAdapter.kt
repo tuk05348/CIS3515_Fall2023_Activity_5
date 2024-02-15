@@ -7,7 +7,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
 
-class NumberDisplayAdapter (private val _numbers: Array<Int>, _callBack: (NumberItem) -> Unit) : RecyclerView.Adapter<NumberDisplayAdapter.NumberViewHolder>() {
+class NumberDisplayAdapter (private val _numbers: Array<Int>, _callBack: (Int) -> Unit) : RecyclerView.Adapter<NumberDisplayAdapter.NumberViewHolder>() {
 
     private val numbers = _numbers
     private val callback = _callBack
